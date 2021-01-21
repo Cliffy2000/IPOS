@@ -1,43 +1,184 @@
 <!DOCTYPE html>
 <html lang="en" class="h-100">
 
-  <head>
-    <title>IPOS Website</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<head>
+  <title>IPOS Website</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <link href="css/bootstrap.min.css" rel="stylesheet" />
-<link href="css/sgds.css" rel=stylesheet" />
+<link href="css/sgds.css" rel="stylesheet" />
+<link href="css/slick.css" rel="stylesheet" />
 <link href="css/main.css" rel="stylesheet" />
-  </head>
+</head>
 
 
-  <body class="d-flex flex-column h-100">
-    
+<body class="d-flex flex-column h-100">
+  <header>
 
-    <main>
+	<div class="sgds-masthead">
+		<div class="container container-fluid">
+			<a href="https://www.gov.sg" target="_blank">
+				<span class="sgds-icon sgds-icon-sg-crest"></span>
+				<span class="is-text">A Singapore Government Agency Website</span>
+			</a>
+		</div>
+	</div>
+
+	<div class="container container-fluid">
+		<nav class="sgds-navbar" role="navigation">
+			<div class="sgds-navbar-brand">
+				<a class="sgds-navbar-item">
+					<img src="/res/logo.jpg" alt="IPOS Logo" />
+				</a>
+				<div class="sgds-navbar-burger" data-target="mainnav-4">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+
+			<div id="mainnav-4" class="sgds-navbar-menu">
+				<div class="sgds-navbar-start">
+					<div class="sgds-navbar-item is-hidden-desktop">
+						<form>
+							<div class="field has-addons">
+								<div class="control is-expanded">
+									<input class="input is-fullwidth" id="nav-4-search-mobile" type="text"
+									placeholder="What are you looking for?" name="nav-4-search-mobile"
+									aria-label="search" />
+								</div>
+							</div>
+						</form>
+						<hr class="is-marginless margin--top--sm" />
+					</div>
+				</div>
+
+				<div class="sgds-navbar-end">
+						<div class="sgds-navbar-item has-dropdown is-hoverable is-mega" >
+							<a class="sgds-navbar-link is-uppercase">
+								Who we are
+							</a>
+							<div class="sgds-navbar-dropdown">
+								<div class="sgds-container is-fluid">
+									<div class="row">
+										<div class="col-3">
+											<span>Trade Marks</span>
+										</div>
+										<div class="col-3">
+											<span>Patent</span>
+										</div>
+										<div class="col-3">
+											<span>Design</span>
+										</div>
+										<div class="col-3">
+											
+											<span>Geographical Indication</span>
+										</div>
+									</div>
+
+									<div class="row">
+										<div class="col-3">
+
+										</div>
+										<div class="col-3">
+
+										</div>
+										<div class="col-3">
+
+										</div>
+										<div class="col-3">
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+
+			<div class="sgds-navbar-end is-hidden-touch ml-0">
+				<div class="sgds-navbar-item">
+					<button class="sgds-button is-white is-large search-toggle" data-target="searchbar-1">
+						<span class="sgds-icon sgds-icon-search">
+							<span style="display:none;">
+								search
+							</span>
+						</span>
+					</button>
+				</div>
+			</div>
+		</nav>
+
+		<div class="row is-hidden-touch is-marginless hide" id="searchbar-1">
+			<div class="col">
+				<hr class="margin--bottom--sm" />
+				<form>
+					<div class="field has-addons padding--sm">
+						<div class="control has-icons-left is-expanded padding--bottom--sm">
+							<input class="input is-fullwidth is-borderless is-shadowless" id="nav-4-search" type="text"
+							placeholder="What are you looking for?" name="nav-4-search" autocomplete="off"
+							aria-label="search" />
+							<span class="icon is-left">
+								<i class="search-bar-icon sgds-icon sgds-icon-search is-size-7"></i>
+							</span>
+						</div>
+						<div class="control">
+							<button type="button" class="sgds-button is-primary has-text-white padding--left padding--right">
+								SEARCH
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+</header>
+
+  <main>
+
+    <div class="container container-fluid">
+      <div class='top-slider'>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div class="container" style="text-align: center;">
+        <span style="color: rgb(255,69,0); font-size: 14px;">FUTURE WITH IP</span>
+      </div>
       
-      <div class="container container-fluid" style="text-align: center;">
-        <span style="color: orangered; font-size: 30px;"><b>NEWS & COMMUNITY</b></span><br>
-        <span style="font-size: 24px;">Stay updated with out latest news and events.</span>
-      </div>
-        
-      <div class="container container-fluid">
-        
-      </div>
 
-    </main>
+      <div class="container empty-bubble" style="border-color: rgb(255,69,0)">
+        <div class="container" style="background-color: white">
+          How can IP give you a competitive edge?
+        </div>
+      </div>
+      <div class="bubble" style="background: red; border-color: red;">test</div>
+    </div>
 
-    
-    <script src="js/jquery.min.js" type="text/javascript"></script>
+
+  </main>
+
+  
+  <script src="js/jquery.min.js" type="text/javascript"></script>
 <script src="js/bootstrap.min.js" type="text/javascript"></script>
 <script src="js/sgds.js" type="text/javascript"></script>
+<script src="js/slick.min.js" type="text/javascript"></script>
 <script src="js/main.js" type="text/javascript"></script>
-  </body>
+</body>
 
-  <script>
-    
-  </script>
+<script>
+  $(document).ready(function() {
+
+    $('.top-slider').slick({
+      autoplay: true,
+      infinite: true
+    })
+
+  })
+</script>
 
 </html>

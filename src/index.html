@@ -1,34 +1,53 @@
 <!DOCTYPE html>
 <html lang="en" class="h-100">
 
-  <head>
-    <title>IPOS Website</title>
-    @@include('partials/head.html')
-  </head>
+<head>
+  <title>IPOS Website</title>
+  @@include('partials/head.html')
+</head>
 
 
-  <body class="d-flex flex-column h-100">
-    @@include('partials/header.html')
+<body class="d-flex flex-column h-100">
+  @@include('partials/header.html')
 
-    <main>
+  <main>
+
+    <div class="container container-fluid">
+      <div class='top-slider'>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div class="container" style="text-align: center;">
+        <span style="color: rgb(255,69,0); font-size: 14px;">FUTURE WITH IP</span>
+      </div>
       
-      <div class="container container-fluid" style="text-align: center;">
-        <span style="color: orangered; font-size: 30px;"><b>NEWS & COMMUNITY</b></span><br>
-        <span style="font-size: 24px;">Stay updated with out latest news and events.</span>
+
+      <div class="container empty-bubble" style="border-color: rgb(255,69,0)">
+        <div class="container" style="background-color: white">
+          How can IP give you a competitive edge?
+        </div>
       </div>
-        
-      <div class="container container-fluid">
-        
-      </div>
+      <div class="bubble" style="background: red; border-color: red;">test</div>
+    </div>
 
-    </main>
 
-    @@include('partials/footer.html')
-    @@include('partials/scripts.html')
-  </body>
+  </main>
 
-  <script>
-    
-  </script>
+  @@include('partials/footer.html')
+  @@include('partials/scripts.html')
+</body>
+
+<script>
+  $(document).ready(function() {
+
+    $('.top-slider').slick({
+      autoplay: true,
+      infinite: true
+    })
+
+  })
+</script>
 
 </html>
